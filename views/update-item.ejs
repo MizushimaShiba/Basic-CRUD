@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1 style="text-align: center;"> Update Teacher </h1>
+
+  <form action="/item/edit/<%= data.id %>" method="POST"><br>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" value="<%= data.name %>"><br>
+    <label for="supplier">Supplier</label><br>
+    <input type="text" id="supplier" name="supplier" value="<%= data.supplier %>"><br>
+    <label for="price">Harga</label><br>
+    <input type="number" id="price" name="price" value="<%= data.price %>"><br>
+    <label for="jumlah">Jumlah</label><br>
+    <input type="number" id="jumlah" name="jumlah" value="<%= data.jumlah %>"><br>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

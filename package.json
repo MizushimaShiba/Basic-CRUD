@@ -1,0 +1,25 @@
+{
+  "name": "basic-crud",
+  "version": "1.0.0",
+  "description": "BASIC CRUD BASED ON OLINAMASI 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MizushimaShiba/Basic-CRUD.git"
+  },
+  "author": "Mizushima Shiba, ARR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MizushimaShiba/Basic-CRUD/issues"
+  },
+  "homepage": "https://github.com/MizushimaShiba/Basic-CRUD#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  }
+}

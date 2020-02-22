@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Supplier</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Option</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(element => { %>
+       <tr>
+        <th scope="row"><%= element.id %></th>
+        <td><%= element.name %> </td>
+        <td><%= element.supplier %> </td>
+        <td><%= element.price %> </td>
+        <td><%= element.jumlah %> </td>
+        <td>
+         <a href="/item/edit/<%= element.id %>"> Edit</a> |
+         <a href="/item/delete/<%= element.id %>"> Delete</a>
+        </td>
+       </tr>
+      <% }) %>
+    </tbody>
+  </table>
+
+  <a href="/item/add">Tambah item</a>
+  <a href="/">Home</a>
+  
+</body>
+</html>

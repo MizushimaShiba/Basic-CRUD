@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "mizushimashiba",
+    "password": null,
+    "database": "project_olinamasi",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
